@@ -2,10 +2,17 @@ package com.company;
 
 public class Main {
 
-     String name;
+     private  String myName;
 
     public Main(String me) {
-        name=me;
+        myName =me;
+    }
+    private void run() {
+
+        System.out.println("Hello " + getMyName());
+    }
+    public String getMyName(){
+        return myName;
     }
 
     public static void main(String[] args) {
@@ -15,13 +22,5 @@ public class Main {
         }
         Main m = new Main(s);
         m.run();
-
-
-
-    }
-
-    private void run() {
-
-        System.out.println("Hello " + name);
     }
 }
